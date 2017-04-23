@@ -49,7 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Linq\ExpressionVisitors\MsSqlExpressionVisitor.cs" />
+    <Compile Include="Linq\MsSqlJsonQueryable.cs" />
     <Compile Include="Linq\MsSqlQueryProvider.cs" />
+    <Compile Include="Linq\QueryBuilders\JsonQueryBuilder.cs" />
+    <Compile Include="Linq\MsSqlQueryExecutor.cs" />
     <Compile Include="MsSqlDocumentSession.cs" />
     <Compile Include="MsSqlDocumentStore.cs" />
     <Compile Include="Linq\MsSqlQueryParser.cs" />
@@ -87,6 +91,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Sql\UpdateDocument.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

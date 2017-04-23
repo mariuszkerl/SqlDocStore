@@ -36,6 +36,7 @@
     <Reference Include="Ploeh.AutoFixture, Version=3.50.2.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoFixture.3.50.2\lib\net40\Ploeh.AutoFixture.dll</HintPath>
     </Reference>
+    <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b" />
     <Reference Include="Shouldly, Version=2.8.2.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
       <HintPath>..\packages\Shouldly.2.8.2\lib\net451\Shouldly.dll</HintPath>
       <Private>True</Private>
@@ -70,7 +71,10 @@
     <Compile Include="MsSqlDocumentStoreTests.cs" />
     <Compile Include="MsSqlDocumentStoreFixture.cs" />
     <Compile Include="MsSqlDocumentSessionTests.Optimistic.cs" />
+    <Compile Include="MsSqlExpressionVisitorTest.cs" />
+    <Compile Include="MsSqlQueryExecutorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleDoc.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SqlDocStore.MsSql\SqlDocStore.MsSql.csproj">
